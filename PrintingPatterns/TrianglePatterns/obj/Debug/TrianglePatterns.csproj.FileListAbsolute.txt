@@ -1,0 +1,6 @@
+G:\INFO 6202 C#\CSYE_6202_PrintingPattern\PrintingPatterns\TrianglePatterns\bin\Debug\TrianglePatterns.exe.config
+G:\INFO 6202 C#\CSYE_6202_PrintingPattern\PrintingPatterns\TrianglePatterns\bin\Debug\TrianglePatterns.exe
+G:\INFO 6202 C#\CSYE_6202_PrintingPattern\PrintingPatterns\TrianglePatterns\bin\Debug\TrianglePatterns.pdb
+G:\INFO 6202 C#\CSYE_6202_PrintingPattern\PrintingPatterns\TrianglePatterns\obj\Debug\TrianglePatterns.csprojResolveAssemblyReference.cache
+G:\INFO 6202 C#\CSYE_6202_PrintingPattern\PrintingPatterns\TrianglePatterns\obj\Debug\TrianglePatterns.exe
+G:\INFO 6202 C#\CSYE_6202_PrintingPattern\PrintingPatterns\TrianglePatterns\obj\Debug\TrianglePatterns.pdb
