@@ -230,6 +230,7 @@ namespace TrianglePatterns
             for (rowNum = 0; rowNum < userInput; rowNum++)
             {
 
+
                 for (i = rowNum ; i > 0; i--)
                 {
                     Console.Write("*");
