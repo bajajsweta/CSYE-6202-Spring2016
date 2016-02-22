@@ -1,0 +1,9 @@
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump.Tests\bin\Debug\GasPump.Tests.dll
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump.Tests\bin\Debug\GasPump.Tests.pdb
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump.Tests\bin\Debug\GasPump.exe
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump.Tests\bin\Debug\nunit.framework.dll
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump.Tests\bin\Debug\GasPump.pdb
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump.Tests\bin\Debug\nunit.framework.xml
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump.Tests\obj\Debug\GasPump.Tests.csprojResolveAssemblyReference.cache
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump.Tests\obj\Debug\GasPump.Tests.dll
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump.Tests\obj\Debug\GasPump.Tests.pdb

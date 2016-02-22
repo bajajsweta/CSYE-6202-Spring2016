@@ -1,0 +1,6 @@
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump\bin\Debug\GasPump.exe.config
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump\bin\Debug\GasPump.exe
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump\bin\Debug\GasPump.pdb
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump\obj\Debug\GasPump.csprojResolveAssemblyReference.cache
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump\obj\Debug\GasPump.exe
+G:\INFO 6202 C#\CYSE_6202_GasPumpAssignment\GasPump\GasPump\obj\Debug\GasPump.pdb
