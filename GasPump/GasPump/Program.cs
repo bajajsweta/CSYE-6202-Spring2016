@@ -11,6 +11,7 @@ namespace GasPump
             MidgradeGas,
             PremiumGas,
             DieselFuel
+
         }
 
         static void Main(string[] args)
