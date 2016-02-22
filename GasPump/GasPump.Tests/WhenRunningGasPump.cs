@@ -86,7 +86,7 @@ namespace GasPump.Tests
 		}
 
 		#endregion
-
+        
 		#region UserEnteredValidGasType Tests
 
 		[Test]
