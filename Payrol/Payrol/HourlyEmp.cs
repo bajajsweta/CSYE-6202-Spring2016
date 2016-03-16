@@ -54,7 +54,7 @@ namespace Payrol
             name = Console.ReadLine();
             Console.Write("Enter Social Security Number : ");
             ssnNumb = Console.ReadLine();
-            secNumber = ssnNumb;
+          /*  secNumber = ssnNumb;
 
             if (secNumber.Length > MaxLength)
             {
@@ -67,6 +67,7 @@ namespace Payrol
                 ssnNumb = Console.ReadLine();
                 secNumber = ssnNumb;
             }
+            */
         }
 
         

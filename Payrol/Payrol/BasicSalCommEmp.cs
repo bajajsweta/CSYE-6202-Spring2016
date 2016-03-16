@@ -29,7 +29,7 @@ namespace Payrol
 
         public override void basicInfo(string name, string ssnNumb)
         {
-            Console.Write("Commission Employee : ", name);
+            Console.Write("Basic Salaried Commission Employee : ", name);
             Console.ReadLine();
             Console.Write("Social Security Number : ", ssnNumb);
             Console.ReadLine();
