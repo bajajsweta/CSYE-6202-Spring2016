@@ -8,7 +8,7 @@ namespace Payrol
 {
     interface IEmployee
     {
-        double calculateSal();
+        double calculateSal(); 
     
     }
 }
