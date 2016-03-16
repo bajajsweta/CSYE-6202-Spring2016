@@ -1,0 +1,6 @@
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payrol\bin\Debug\Payrol.exe.config
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payrol\obj\Debug\Payrol.csprojResolveAssemblyReference.cache
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payrol\bin\Debug\Payrol.exe
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payrol\bin\Debug\Payrol.pdb
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payrol\obj\Debug\Payrol.exe
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payrol\obj\Debug\Payrol.pdb

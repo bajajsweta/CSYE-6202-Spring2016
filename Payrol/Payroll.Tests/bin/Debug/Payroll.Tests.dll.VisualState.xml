@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1006]G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.dll</TopNode>
+  <SelectedNode>[0-1006]G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1006]G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1007]Payroll" Expanded="true" />
+    <Node UniqueName="[0-1008]Payroll.Tests" Expanded="true" />
+    <Node UniqueName="[0-1000]Payroll.Tests.WhenGeneratingPayrollReport" Expanded="true" />
+  </Nodes>
+</VisualState>

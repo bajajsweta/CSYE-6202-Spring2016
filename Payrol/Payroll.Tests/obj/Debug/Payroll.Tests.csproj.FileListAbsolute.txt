@@ -1,0 +1,9 @@
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.dll
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.pdb
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\nunit.framework.dll
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\Payrol.exe
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\Payrol.pdb
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\nunit.framework.xml
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\obj\Debug\Payroll.Tests.csprojResolveAssemblyReference.cache
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\obj\Debug\Payroll.Tests.dll
+G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\obj\Debug\Payroll.Tests.pdb

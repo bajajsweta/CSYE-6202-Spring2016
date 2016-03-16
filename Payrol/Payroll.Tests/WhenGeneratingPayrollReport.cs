@@ -56,7 +56,6 @@ namespace Payroll.Tests
 
         #endregion
 
-
         #region userEnteredSales Tests
 
         [Test]
