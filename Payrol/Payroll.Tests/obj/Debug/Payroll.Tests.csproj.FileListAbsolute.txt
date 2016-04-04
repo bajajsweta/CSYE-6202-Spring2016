@@ -7,3 +7,12 @@ G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\nunit.framework
 G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\obj\Debug\Payroll.Tests.csprojResolveAssemblyReference.cache
 G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\obj\Debug\Payroll.Tests.dll
 G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\obj\Debug\Payroll.Tests.pdb
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.dll
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.pdb
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\bin\Debug\nunit.framework.dll
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\bin\Debug\Payrol.exe
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\bin\Debug\Payrol.pdb
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\bin\Debug\nunit.framework.xml
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\obj\Debug\Payroll.Tests.csprojResolveAssemblyReference.cache
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\obj\Debug\Payroll.Tests.dll
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\obj\Debug\Payroll.Tests.pdb

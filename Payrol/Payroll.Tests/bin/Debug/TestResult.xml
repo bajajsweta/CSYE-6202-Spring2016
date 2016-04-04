@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.dll" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-03-16" time="14:32:44">
+<test-results name="C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.dll" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-03-26" time="12:32:31">
   <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8670" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="SWETA" user="sweta" user-domain="SWETA" />
   <culture-info current-culture="en-IN" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.dll" executed="True" result="Success" success="True" time="0.347" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payroll.Tests\bin\Debug\Payroll.Tests.dll" executed="True" result="Success" success="True" time="0.236" asserts="0">
     <results>
-      <test-suite type="Namespace" name="Payroll" executed="True" result="Success" success="True" time="0.310" asserts="0">
+      <test-suite type="Namespace" name="Payroll" executed="True" result="Success" success="True" time="0.210" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.309" asserts="0">
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.209" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="WhenGeneratingPayrollReport" executed="True" result="Success" success="True" time="0.306" asserts="0">
+              <test-suite type="TestFixture" name="WhenGeneratingPayrollReport" executed="True" result="Success" success="True" time="0.206" asserts="0">
                 <results>
-                  <test-case name="Payroll.Tests.WhenGeneratingPayrollReport.When_UserEnteredHours_GreaterThanZero" executed="True" result="Success" success="True" time="0.235" asserts="1" />
-                  <test-case name="Payroll.Tests.WhenGeneratingPayrollReport.When_UserEnteredHours_IsGreateThan40" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-                  <test-case name="Payroll.Tests.WhenGeneratingPayrollReport.When_UserEnteredHours_LessThanZero" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                  <test-case name="Payroll.Tests.WhenGeneratingPayrollReport.When_UserEnteredHours_GreaterThanZero" executed="True" result="Success" success="True" time="0.151" asserts="1" />
+                  <test-case name="Payroll.Tests.WhenGeneratingPayrollReport.When_UserEnteredHours_IsGreaterThan40" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="Payroll.Tests.WhenGeneratingPayrollReport.When_UserEnteredHours_LessThanZero" executed="True" result="Success" success="True" time="0.001" asserts="1" />
                   <test-case name="Payroll.Tests.WhenGeneratingPayrollReport.When_UserEnteredSales_GreaterThanZero" executed="True" result="Success" success="True" time="0.002" asserts="1" />
-                  <test-case name="Payroll.Tests.WhenGeneratingPayrollReport.When_UserEnteredSales_LessThanZero" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                  <test-case name="Payroll.Tests.WhenGeneratingPayrollReport.When_UserEnteredSales_LessThanZero" executed="True" result="Success" success="True" time="0.001" asserts="1" />
                 </results>
               </test-suite>
             </results>

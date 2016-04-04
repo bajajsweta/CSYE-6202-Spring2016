@@ -4,3 +4,9 @@ G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payrol\bin\Debug\Payrol.exe
 G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payrol\bin\Debug\Payrol.pdb
 G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payrol\obj\Debug\Payrol.exe
 G:\INFO 6202 C#\CSYE_6200_Payroll\Payrol\Payrol\obj\Debug\Payrol.pdb
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payrol\bin\Debug\Payrol.exe.config
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payrol\obj\Debug\Payrol.exe
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payrol\obj\Debug\Payrol.pdb
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payrol\bin\Debug\Payrol.exe
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payrol\bin\Debug\Payrol.pdb
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\Payrol\Payrol\obj\Debug\Payrol.csprojResolveAssemblyReference.cache
