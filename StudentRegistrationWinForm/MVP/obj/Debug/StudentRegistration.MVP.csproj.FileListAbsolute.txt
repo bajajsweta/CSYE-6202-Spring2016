@@ -1,0 +1,11 @@
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\obj\Debug\MVP.EditStudent.resources
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\obj\Debug\MVP.NewStudentRegistration.resources
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\obj\Debug\MVP.RemoveStudent.resources
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\obj\Debug\StudentRegistrationWinForm.StudentRegistrationLogin.resources
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\obj\Debug\StudentRegistrationWinForm.StudentRegistrationMainWindow.resources
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\obj\Debug\StudentRegistration.MVP.csproj.GenerateResource.Cache
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\bin\Debug\MVP.dll
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\bin\Debug\MVP.pdb
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\obj\Debug\MVP.dll
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\obj\Debug\MVP.pdb
+C:\Users\sweta\Source\Repos\CSYE-6202-Spring2016\StudentRegistrationWinForm\MVP\obj\Debug\StudentRegistration.MVP.csprojResolveAssemblyReference.cache
