@@ -103,7 +103,7 @@
     <Compile Include="DAO\EconomySeat.cs" />
     <Compile Include="DAO\Employee.cs" />
     <Compile Include="DAO\Flight.cs" />
-    <Compile Include="FlightSchedule.cs" />
+    <Compile Include="DAO\FlightSchedule.cs" />
     <Compile Include="DAO\GoogleCalendarUtils.cs" />
     <Compile Include="DAO\ISeat.cs" />
     <Compile Include="DAO\Payment.cs" />
