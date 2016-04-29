@@ -54,6 +54,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.priceTxt = new System.Windows.Forms.TextBox();
+            this.totalPriceTxt = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // flightDuration_txt
@@ -84,7 +86,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(204, 450);
+            this.button1.Location = new System.Drawing.Point(204, 487);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 32);
             this.button1.TabIndex = 71;
@@ -250,6 +252,7 @@
             this.saetsBookedNumber.Name = "saetsBookedNumber";
             this.saetsBookedNumber.Size = new System.Drawing.Size(163, 20);
             this.saetsBookedNumber.TabIndex = 83;
+            this.saetsBookedNumber.TextChanged += new System.EventHandler(this.saetsBookedNumber_TextChanged);
             // 
             // seatType_txt
             // 
@@ -273,9 +276,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(32, 382);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(31, 13);
+            this.label12.Size = new System.Drawing.Size(89, 13);
             this.label12.TabIndex = 84;
-            this.label12.Text = "Price";
+            this.label12.Text = "Price (Per Ticket)";
             // 
             // priceTxt
             // 
@@ -285,11 +288,33 @@
             this.priceTxt.Size = new System.Drawing.Size(163, 20);
             this.priceTxt.TabIndex = 87;
             // 
+            // totalPriceTxt
+            // 
+            this.totalPriceTxt.BackColor = System.Drawing.Color.NavajoWhite;
+            this.totalPriceTxt.Enabled = false;
+            this.totalPriceTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalPriceTxt.Location = new System.Drawing.Point(204, 452);
+            this.totalPriceTxt.Name = "totalPriceTxt";
+            this.totalPriceTxt.ReadOnly = true;
+            this.totalPriceTxt.Size = new System.Drawing.Size(163, 20);
+            this.totalPriceTxt.TabIndex = 89;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(32, 455);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(58, 13);
+            this.label13.TabIndex = 88;
+            this.label13.Text = "Total Price";
+            // 
             // EmployeeBookTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 506);
+            this.ClientSize = new System.Drawing.Size(638, 531);
+            this.Controls.Add(this.totalPriceTxt);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.priceTxt);
             this.Controls.Add(this.seatType_txt);
             this.Controls.Add(this.label11);
@@ -352,5 +377,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox priceTxt;
+        private System.Windows.Forms.TextBox totalPriceTxt;
+        private System.Windows.Forms.Label label13;
     }
 }

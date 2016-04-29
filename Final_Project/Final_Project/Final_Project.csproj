@@ -96,6 +96,7 @@
     <Compile Include="CreateFlightSchedule.Designer.cs">
       <DependentUpon>CreateFlightSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAL\BookingDataAccess.cs" />
     <Compile Include="DAL\DataAccess.cs" />
     <Compile Include="DAL\FlightCrewDataAccess.cs" />
     <Compile Include="DAL\FlightDataAccess.cs" />

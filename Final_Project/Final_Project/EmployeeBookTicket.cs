@@ -1,4 +1,5 @@
-﻿using Final_Project.DAO;
+﻿using Final_Project.DAL;
+using Final_Project.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -70,28 +71,26 @@ namespace Final_Project
                 MessageBox.Show("Please Change your Seat Selection Criteria, We are short of seats!");
                 return;
             }
+            Booking booking = new Booking();
+            booking.FlightScheduleID = fs.FlightScheduleID;
+            booking.CustomerName = Customer_ComboBox.SelectedValue.ToString();
+            booking.EmployeeName = CommonAttributes.GetInstance().EmployeeName;
+            booking.seats_booked = Convert.ToInt32(saetsBookedNumber.Text);
+            booking.SeatType = fs.seat_type;
+            booking.Cost = fs.Type_seatCost;
+            booking.TotalCost =  float.Parse(totalPriceTxt.Text);
 
-            DAL.DataAccess da = new DAL.DataAccess();
-
-            var paramValues = new List<string>();
-            paramValues.Add(Convert.ToString(fs.FlightScheduleID));
-            paramValues.Add(Customer_ComboBox.SelectedItem.ToString());
-            paramValues.Add(CommonAttributes.GetInstance().EmployeeName);
-         //   paramValues.Add(fs.price_id.ToString());
-            paramValues.Add("1");
-            paramValues.Add(saetsBookedNumber.Text);
-          
-            var paramTypes = new List<string>();
-            paramTypes.Add("int");
-            paramTypes.Add("string");
-            paramTypes.Add("string");
-           // paramTypes.Add("int");
-            paramTypes.Add("int");
-            paramTypes.Add("int");
-
-            var Customer_FormFill = da.runProcedure("BOOKING_TICKET", paramValues, paramTypes);
+            BookingDataAccess bda = new BookingDataAccess();
+            booking = bda.CreateBooking(booking);
+         
             MessageBox.Show("Thank you for Booking !");
             this.Close();
+        }
+
+        private void saetsBookedNumber_TextChanged(object sender, EventArgs e)
+        {
+            if(!saetsBookedNumber.Text.Equals(""))
+                totalPriceTxt.Text = "" + (fs.Type_seatCost) * float.Parse(saetsBookedNumber.Text);
         }
     }
 }
