@@ -53,6 +53,7 @@
             this.crewDelete_Button = new System.Windows.Forms.Button();
             this.crewAdd_Button = new System.Windows.Forms.Button();
             this.crewUpdate_Button = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_flightdetails)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -306,11 +307,22 @@
             this.crewUpdate_Button.UseVisualStyleBackColor = true;
             this.crewUpdate_Button.Click += new System.EventHandler(this.button9_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(545, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(131, 23);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "LogOut";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // AdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(707, 458);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.tabControl1);
             this.Name = "AdminPage";
             this.Text = "Administrator Page";
@@ -343,5 +355,6 @@
         private System.Windows.Forms.Button crewDelete_Button;
         private System.Windows.Forms.Button crewAdd_Button;
         private System.Windows.Forms.Button crewUpdate_Button;
+        private System.Windows.Forms.Button button4;
     }
 }

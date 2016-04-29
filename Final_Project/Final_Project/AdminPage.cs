@@ -266,5 +266,10 @@ namespace Final_Project
             fsda.DeleteFlightSchedule(fs);
             DeleteFromFlightScheduleGrid(fs);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
