@@ -53,7 +53,7 @@ namespace Final_Project
             DepartureTime_comboBox.Text = Convert.ToString(fs.FlightDepartureTime);
             ArrivalTime_comboBox.Text = Convert.ToString(fs.FlightArrival);
             flightDuration_txt.Text = Convert.ToString(fs.FlightDuration);
-            priceTxt.Text = Convert.ToString(fs.price);
+            priceTxt.Text = Convert.ToString(fs.Type_seatCost);
             seatType_txt.Text = fs.seat_type;
             saetsBookedNumber.Text = Convert.ToString(numOfSeatsSelected);
         }

@@ -14,6 +14,9 @@ namespace Final_Project
 {
     public partial class EmployeeCustomerPage : Form
     {
+
+        ISeat seat;
+
         public EmployeeCustomerPage()
         {
             InitializeComponent();
@@ -57,8 +60,8 @@ namespace Final_Project
 
             FlightScheduleDataAccess fsda = new FlightScheduleDataAccess();
             var listOfFlightSchedules = fsda.SearchFlightSchedule(fs);
-
-
+          
+            
             var dataTable = FlightSchedule.GetDataTable(listOfFlightSchedules);
             dgv_CommonTable.DataSource = dataTable;
             if (dataTable.Rows.Count >= 1)
@@ -87,6 +90,16 @@ namespace Final_Project
             var flightSchedules = fsda.GetFlightScheduleID(flightScheduleId);
             var flightSchedule = flightSchedules.First(f => f.seat_type.Equals(EmpSeatType_comboBox.Text));
 
+            if (flightSchedule.seat_type.Equals("Business"))
+            {
+                seat = new BusinessSeat();
+            }
+            else
+            {
+                seat = new EconomySeat();
+            }
+
+            flightSchedule.Type_seatCost = seat.CalculatePrice(flightSchedule);
 
             int numOfSeatsSelected = int.Parse(EmpNo_of_seats_textbox.Text.Equals("") ? "0" : EmpNo_of_seats_textbox.Text);
             EmployeeBookTicket empbookTicket = new EmployeeBookTicket(flightSchedule, numOfSeatsSelected);

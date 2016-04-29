@@ -11,10 +11,12 @@ using System.Windows.Forms;
 
 namespace Final_Project
 {
+
     public partial class LoginPage : Form
 
     {
 
+        private static readonly log4net.ILog Log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         public LoginPage()
         {
@@ -42,6 +44,7 @@ namespace Final_Project
                 AdminPage ap = new AdminPage();
                 this.Close();
                 ap.Show();
+                Log.Info("Admin Logged in : " + CommonAttributes.GetInstance().AdminName);
             }
             else if (list.Contains("Staff") || list.Contains("Pilot"))
             {
@@ -50,6 +53,7 @@ namespace Final_Project
                 EmployeeCustomerPage ecp = new EmployeeCustomerPage();
                 this.Close();
                 ecp.Show();
+                Log.Info("Admin Logged in : " + CommonAttributes.GetInstance().EmployeeName);
             }
             else
             {
