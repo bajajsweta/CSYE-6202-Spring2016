@@ -139,7 +139,7 @@ namespace Final_Project.DAL
         public FlightSchedule UpdateFlightSchedule(FlightSchedule flightSchedule)
         {
             var paramValues = new List<string>();
-
+            paramValues.Add(flightSchedule.FlightScheduleID.ToString());
             paramValues.Add(flightSchedule != null ? GetValue(flightSchedule.FlightName) : null);
             paramValues.Add(flightSchedule != null ? GetValue(flightSchedule.FlighFrom) : null);
             paramValues.Add(flightSchedule != null ? GetValue(flightSchedule.FlightTo) : null);
@@ -149,6 +149,7 @@ namespace Final_Project.DAL
             paramValues.Add(flightSchedule != null ? GetValue(flightSchedule.Crew_Id.ToString()) : null);
 
             var paramTypes = new List<string>();
+            paramTypes.Add("int");
             paramTypes.Add("string");
             paramTypes.Add("string");
             paramTypes.Add("string");
@@ -162,6 +163,17 @@ namespace Final_Project.DAL
             return flightSchedule;
         }
 
+        public void DeleteFlightSchedule(FlightSchedule flightSchedule)
+        {
+            var paramValues = new List<string>();
+            paramValues.Add(flightSchedule != null ? GetValue(flightSchedule.FlightScheduleID.ToString()) : null);
+
+            var paramTypes = new List<string>();
+            paramTypes.Add("int");
+
+
+            var CreateFlightSchedule = runProcedure("DELETE_FLIGHTSCHEDULE", paramValues, paramTypes);
+        }
 
     }
 }

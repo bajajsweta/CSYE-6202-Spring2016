@@ -18,6 +18,7 @@ namespace Final_Project
 
         Flight flight;
         Employee employee;
+        FlightSchedule flightSchedule;
 
         List<string> paramValues = new List<string>();
         List<string> paramTypes = new List<string>();
@@ -32,6 +33,7 @@ namespace Final_Project
             InitializeComponent();
             flight = new Flight();
             employee = new Employee();
+            flightSchedule = new FlightSchedule();
 
         }
 
@@ -40,6 +42,8 @@ namespace Final_Project
             CreateFlightPage page = new CreateFlightPage(this, null);
             page.Show();
         }
+
+        /***************************************Flight Related Code************************/
 
         public void PopulateAllFlightsGrid()
         {
@@ -67,14 +71,45 @@ namespace Final_Project
             PopulateAllFlightsGrid();
         }
 
-
+     /***************************************FlightSchedule Related Code************************/
 
         public void PopulateAllFlightScheduleGrid()
         {
+            allFlightSchedules.Sort((f1, f2) => f1.FlightScheduleID < f2.FlightScheduleID ? 1 : 
+                (f1.FlightScheduleID == f2.FlightScheduleID ? 0 : -1));
+
             var dataTable = FlightSchedule.GetDataTable(allFlightSchedules);
             dgv_flightScheduleDetails.DataSource = dataTable;
             if (dataTable.Rows.Count >= 1)
                 dgv_flightScheduleDetails.Columns[0].Visible = false;
+        }
+
+        public void AddToFlightScheduleGrid(FlightSchedule flightSchedule)
+        {
+            allFlightSchedules.Add(flightSchedule);
+            PopulateAllFlightScheduleGrid();
+        }
+
+        public void UpdateFlightScheduleGrid(FlightSchedule flightSchedule)
+        {
+            allFlightSchedules.RemoveAll(fs => fs.FlightScheduleID == flightSchedule.FlightScheduleID && fs.seat_type.Equals(flightSchedule.seat_type));
+            var otherFs = allFlightSchedules.First(fs => fs.FlightScheduleID == flightSchedule.FlightScheduleID && !fs.seat_type.Equals(flightSchedule.seat_type));
+            otherFs.Type_seatCount = flightSchedule.FlightNumberOfSeats - flightSchedule.Type_seatCount;
+            otherFs.Crew_Id = flightSchedule.Crew_Id;
+            otherFs.FlightName = flightSchedule.FlightName;
+            otherFs.FlightCarrier = flightSchedule.FlightCarrier;
+            otherFs.FlighFrom = flightSchedule.FlighFrom;
+            otherFs.FlightTo = flightSchedule.FlightTo;
+            otherFs.FlightDepartureTime = flightSchedule.FlightDepartureTime;
+            otherFs.FlightArrival = flightSchedule.FlightArrival; 
+
+            AddToFlightScheduleGrid(flightSchedule);
+        }
+
+        public void DeleteFromFlightScheduleGrid(FlightSchedule flightSchedule)
+        {
+            allFlightSchedules.RemoveAll(fs => fs.FlightScheduleID == flightSchedule.FlightScheduleID);
+            PopulateAllFlightScheduleGrid();
         }
 
 
@@ -203,16 +238,33 @@ namespace Final_Project
         {
             var fs = allFlightSchedules[dgv_flightScheduleDetails.SelectedRows[0].Index];
 
-            flight = new Flight();
-            flight.Name = fs.FlightName;
-            CreateFlightSchedule cfs = new CreateFlightSchedule(this, fs, allCrew,flight);
-            cfs.Show();
+            if (fs.seat_type.Equals("Economy"))
+            {
+                MessageBox.Show("Cannot Change Economy Class Seats!");
+                return;
+            }
+            else
+            {
+                flight = new Flight();
+                flight.Name = fs.FlightName;
+                CreateFlightSchedule cfs = new CreateFlightSchedule(this, fs, allCrew, flight);
+                cfs.Show();
+            }
 
         }
 
         private void view_Button_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void delete_Button_Click(object sender, EventArgs e)
+        {
+            var fs = allFlightSchedules[dgv_flightScheduleDetails.SelectedRows[0].Index];
+
+            FlightScheduleDataAccess fsda = new FlightScheduleDataAccess();
+            fsda.DeleteFlightSchedule(fs);
+            DeleteFromFlightScheduleGrid(fs);
         }
     }
 }

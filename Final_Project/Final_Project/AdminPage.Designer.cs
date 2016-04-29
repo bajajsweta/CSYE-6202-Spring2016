@@ -35,6 +35,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.view_Button = new System.Windows.Forms.Button();
             this.dgv_flightScheduleDetails = new System.Windows.Forms.DataGridView();
             this.delete_Button = new System.Windows.Forms.Button();
             this.add_Button = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@
             this.crewDelete_Button = new System.Windows.Forms.Button();
             this.crewAdd_Button = new System.Windows.Forms.Button();
             this.crewUpdate_Button = new System.Windows.Forms.Button();
-            this.view_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_flightdetails)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -135,6 +135,16 @@
             this.tabPage2.Text = "Flight Schedule Details";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // view_Button
+            // 
+            this.view_Button.Location = new System.Drawing.Point(530, 150);
+            this.view_Button.Name = "view_Button";
+            this.view_Button.Size = new System.Drawing.Size(110, 41);
+            this.view_Button.TabIndex = 9;
+            this.view_Button.Text = "View Details";
+            this.view_Button.UseVisualStyleBackColor = true;
+            this.view_Button.Click += new System.EventHandler(this.view_Button_Click);
+            // 
             // dgv_flightScheduleDetails
             // 
             this.dgv_flightScheduleDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -152,6 +162,7 @@
             this.delete_Button.TabIndex = 7;
             this.delete_Button.Text = "Delete";
             this.delete_Button.UseVisualStyleBackColor = true;
+            this.delete_Button.Click += new System.EventHandler(this.delete_Button_Click);
             // 
             // add_Button
             // 
@@ -225,16 +236,6 @@
             this.crewUpdate_Button.Text = "Update";
             this.crewUpdate_Button.UseVisualStyleBackColor = true;
             this.crewUpdate_Button.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // view_Button
-            // 
-            this.view_Button.Location = new System.Drawing.Point(530, 150);
-            this.view_Button.Name = "view_Button";
-            this.view_Button.Size = new System.Drawing.Size(110, 41);
-            this.view_Button.TabIndex = 9;
-            this.view_Button.Text = "View Details";
-            this.view_Button.UseVisualStyleBackColor = true;
-            this.view_Button.Click += new System.EventHandler(this.view_Button_Click);
             // 
             // AdminPage
             // 

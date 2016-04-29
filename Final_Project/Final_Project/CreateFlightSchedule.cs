@@ -35,6 +35,7 @@ namespace Final_Project
             this.employees = crew;
             this.fs = fs;
             this.flight = flight;
+            this.adminPage = adminPage;
             InitializeComponent();
             SetCrewList();
 
@@ -60,6 +61,16 @@ namespace Final_Project
             {
                 flightname_Combobox.SelectedItem = flight.Name;
             }
+
+            if(fs != null)
+            {
+                flightFrom_comboBox.SelectedItem = fs.FlighFrom;
+                flightTo_comboBox.SelectedItem = fs.FlightTo;
+                dateTimePickerFrom.Value = fs.FlightDepartureTime;
+                dateTimePickerTo.Value = fs.FlightArrival;
+                BusinessType_SeatCount.Text = fs.Type_seatCount.ToString();
+
+            }
         }
 
 
@@ -78,11 +89,26 @@ namespace Final_Project
             fschedule.FlightArrival = Convert.ToDateTime(dateTimePickerTo.Text);
             fschedule.Type_seatCount = Convert.ToInt32(BusinessType_SeatCount.Text);
             fschedule.Crew_Id = int.Parse(crewNumber_comboBox.SelectedItem.ToString().Substring(crewNumber_comboBox.SelectedItem.ToString().IndexOf(":") + 1));
+            fschedule.seat_type = "Business";
+            
+
 
             if (fs == null)
             {
                 FlightScheduleDataAccess fsda = new FlightScheduleDataAccess();
                 fsda.CreateFlightSchedule(fschedule);
+                adminPage.AddToFlightScheduleGrid(fschedule);
+            }
+            else
+            {
+                fschedule.FlightScheduleID = fs.FlightScheduleID;
+                fschedule.FlightCarrier = fs.FlightCarrier;
+                fschedule.FlightNumberOfSeats = fs.FlightNumberOfSeats;
+
+                FlightScheduleDataAccess fsda = new FlightScheduleDataAccess();
+                fsda.UpdateFlightSchedule(fschedule);
+                adminPage.UpdateFlightScheduleGrid(fschedule);
+
             }
 
 
