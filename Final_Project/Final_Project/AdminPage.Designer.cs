@@ -28,6 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -35,7 +44,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.view_Button = new System.Windows.Forms.Button();
             this.dgv_flightScheduleDetails = new System.Windows.Forms.DataGridView();
             this.delete_Button = new System.Windows.Forms.Button();
             this.add_Button = new System.Windows.Forms.Button();
@@ -56,7 +64,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(528, 23);
+            this.button1.Location = new System.Drawing.Point(510, 123);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 49);
             this.button1.TabIndex = 1;
@@ -66,7 +74,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(528, 78);
+            this.button2.Location = new System.Drawing.Point(510, 178);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 48);
             this.button2.TabIndex = 2;
@@ -76,7 +84,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(528, 132);
+            this.button3.Location = new System.Drawing.Point(510, 232);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 41);
             this.button3.TabIndex = 3;
@@ -86,11 +94,35 @@
             // 
             // dgv_flightdetails
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_flightdetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_flightdetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_flightdetails.Location = new System.Drawing.Point(26, 23);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_flightdetails.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_flightdetails.Location = new System.Drawing.Point(43, 123);
             this.dgv_flightdetails.Name = "dgv_flightdetails";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_flightdetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_flightdetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_flightdetails.Size = new System.Drawing.Size(480, 150);
+            this.dgv_flightdetails.Size = new System.Drawing.Size(388, 188);
             this.dgv_flightdetails.TabIndex = 4;
             this.dgv_flightdetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_details_CellContentClick);
             // 
@@ -122,7 +154,6 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.view_Button);
             this.tabPage2.Controls.Add(this.dgv_flightScheduleDetails);
             this.tabPage2.Controls.Add(this.delete_Button);
             this.tabPage2.Controls.Add(this.add_Button);
@@ -135,28 +166,42 @@
             this.tabPage2.Text = "Flight Schedule Details";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // view_Button
-            // 
-            this.view_Button.Location = new System.Drawing.Point(530, 150);
-            this.view_Button.Name = "view_Button";
-            this.view_Button.Size = new System.Drawing.Size(110, 41);
-            this.view_Button.TabIndex = 9;
-            this.view_Button.Text = "View Details";
-            this.view_Button.UseVisualStyleBackColor = true;
-            this.view_Button.Click += new System.EventHandler(this.view_Button_Click);
-            // 
             // dgv_flightScheduleDetails
             // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_flightScheduleDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_flightScheduleDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_flightScheduleDetails.Location = new System.Drawing.Point(35, 200);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_flightScheduleDetails.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_flightScheduleDetails.Location = new System.Drawing.Point(35, 103);
             this.dgv_flightScheduleDetails.Name = "dgv_flightScheduleDetails";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_flightScheduleDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_flightScheduleDetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_flightScheduleDetails.Size = new System.Drawing.Size(605, 150);
+            this.dgv_flightScheduleDetails.Size = new System.Drawing.Size(485, 247);
             this.dgv_flightScheduleDetails.TabIndex = 8;
             // 
             // delete_Button
             // 
-            this.delete_Button.Location = new System.Drawing.Point(530, 103);
+            this.delete_Button.Location = new System.Drawing.Point(544, 200);
             this.delete_Button.Name = "delete_Button";
             this.delete_Button.Size = new System.Drawing.Size(110, 41);
             this.delete_Button.TabIndex = 7;
@@ -166,7 +211,7 @@
             // 
             // add_Button
             // 
-            this.add_Button.Location = new System.Drawing.Point(530, 6);
+            this.add_Button.Location = new System.Drawing.Point(544, 103);
             this.add_Button.Name = "add_Button";
             this.add_Button.Size = new System.Drawing.Size(110, 46);
             this.add_Button.TabIndex = 5;
@@ -176,7 +221,7 @@
             // 
             // update_Button
             // 
-            this.update_Button.Location = new System.Drawing.Point(530, 58);
+            this.update_Button.Location = new System.Drawing.Point(544, 155);
             this.update_Button.Name = "update_Button";
             this.update_Button.Size = new System.Drawing.Size(110, 39);
             this.update_Button.TabIndex = 6;
@@ -200,16 +245,40 @@
             // 
             // dgv_CrewDetails
             // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_CrewDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgv_CrewDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_CrewDetails.Location = new System.Drawing.Point(35, 200);
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_CrewDetails.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dgv_CrewDetails.Location = new System.Drawing.Point(35, 109);
             this.dgv_CrewDetails.Name = "dgv_CrewDetails";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_CrewDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_CrewDetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_CrewDetails.Size = new System.Drawing.Size(605, 150);
+            this.dgv_CrewDetails.Size = new System.Drawing.Size(474, 241);
             this.dgv_CrewDetails.TabIndex = 8;
             // 
             // crewDelete_Button
             // 
-            this.crewDelete_Button.Location = new System.Drawing.Point(530, 139);
+            this.crewDelete_Button.Location = new System.Drawing.Point(532, 206);
             this.crewDelete_Button.Name = "crewDelete_Button";
             this.crewDelete_Button.Size = new System.Drawing.Size(110, 41);
             this.crewDelete_Button.TabIndex = 7;
@@ -219,7 +288,7 @@
             // 
             // crewAdd_Button
             // 
-            this.crewAdd_Button.Location = new System.Drawing.Point(530, 42);
+            this.crewAdd_Button.Location = new System.Drawing.Point(532, 109);
             this.crewAdd_Button.Name = "crewAdd_Button";
             this.crewAdd_Button.Size = new System.Drawing.Size(110, 46);
             this.crewAdd_Button.TabIndex = 5;
@@ -229,7 +298,7 @@
             // 
             // crewUpdate_Button
             // 
-            this.crewUpdate_Button.Location = new System.Drawing.Point(530, 94);
+            this.crewUpdate_Button.Location = new System.Drawing.Point(532, 161);
             this.crewUpdate_Button.Name = "crewUpdate_Button";
             this.crewUpdate_Button.Size = new System.Drawing.Size(110, 39);
             this.crewUpdate_Button.TabIndex = 6;
@@ -274,6 +343,5 @@
         private System.Windows.Forms.Button crewDelete_Button;
         private System.Windows.Forms.Button crewAdd_Button;
         private System.Windows.Forms.Button crewUpdate_Button;
-        private System.Windows.Forms.Button view_Button;
     }
 }

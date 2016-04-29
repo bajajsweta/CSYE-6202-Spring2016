@@ -40,20 +40,21 @@ namespace Final_Project
 
             if (list.Contains("Admin"))
             {
-                CommonAttributes.GetInstance().AdminName = userName_txt.Text;
+                ConstantAttributes.GetInstance().AdminName = userName_txt.Text;
                 AdminPage ap = new AdminPage();
                 this.Close();
                 ap.Show();
-                Log.Info("Admin Logged in : " + CommonAttributes.GetInstance().AdminName);
+                Log.Info("Admin Logged in : " + ConstantAttributes.GetInstance().AdminName);
             }
-            else if (list.Contains("Staff") || list.Contains("Pilot"))
+            //     else if (list.Contains("Staff") || list.Contains("Pilot") )
+            else if (list.Contains("Ticket Admin"))
             {
 
-                CommonAttributes.GetInstance().EmployeeName = userName_txt.Text;
+                ConstantAttributes.GetInstance().EmployeeName = userName_txt.Text;
                 EmployeeCustomerPage ecp = new EmployeeCustomerPage();
                 this.Close();
                 ecp.Show();
-                Log.Info("Admin Logged in : " + CommonAttributes.GetInstance().EmployeeName);
+                Log.Info("Admin Logged in : " + ConstantAttributes.GetInstance().EmployeeName);
             }
             else
             {

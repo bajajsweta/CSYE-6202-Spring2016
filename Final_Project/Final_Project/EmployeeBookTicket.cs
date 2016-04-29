@@ -77,7 +77,7 @@ namespace Final_Project
             Booking booking = new Booking();
             booking.FlightScheduleID = fs.FlightScheduleID;
             booking.CustomerName = Customer_ComboBox.SelectedValue.ToString();
-            booking.EmployeeName = CommonAttributes.GetInstance().EmployeeName;
+            booking.EmployeeName = ConstantAttributes.GetInstance().EmployeeName;
             booking.seats_booked = Convert.ToInt32(saetsBookedNumber.Text);
             booking.SeatType = fs.seat_type;
             booking.Cost = fs.Type_seatCost;

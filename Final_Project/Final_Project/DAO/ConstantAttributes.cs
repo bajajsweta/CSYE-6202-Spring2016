@@ -7,26 +7,28 @@ using System.Threading.Tasks;
 
 namespace Final_Project.DAO
 {
-    public class CommonAttributes
+    public class ConstantAttributes
     {
         public string EmployeeName { get; set; }
 
         public string AdminName { get; set; }
 
+        public string CustomerName { get; set; }
 
-        private static CommonAttributes Instance = null;
 
-        private CommonAttributes()
+        private static ConstantAttributes Instance = null;
+
+        private ConstantAttributes()
         {
             //  DO nothing..
         }
 
-        public static CommonAttributes GetInstance()
+        public static ConstantAttributes GetInstance()
         {
             if(Instance == null)
             {
 
-                Instance = new CommonAttributes();
+                Instance = new ConstantAttributes();
             }
 
             return Instance;

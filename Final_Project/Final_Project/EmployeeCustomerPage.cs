@@ -41,7 +41,7 @@ namespace Final_Project
 
 
             Employee e = new Employee();
-            e.Name = CommonAttributes.GetInstance().EmployeeName;
+            e.Name = ConstantAttributes.GetInstance().EmployeeName;
             allBookings = new BookingDataAccess().GetAllBookings(e);
             PopulateAllBookingsGrid();
 
