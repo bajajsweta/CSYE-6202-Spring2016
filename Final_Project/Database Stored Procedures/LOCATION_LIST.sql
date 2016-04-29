@@ -1,0 +1,6 @@
+DELIMITER //
+CREATE PROCEDURE LOCATION_LIST()
+BEGIN 
+SELECT location_name from location;
+END//
+DELIMITER ;
