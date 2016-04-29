@@ -41,6 +41,9 @@ namespace Final_Project.DAO
 
         public static Flight construct(List<object> list)
         {
+            if ((int)list[3] < 0)
+                return null;
+
             Flight flight = new Flight();
             flight.Id = (int) list[0];
             flight.Name = list[1].ToString();
