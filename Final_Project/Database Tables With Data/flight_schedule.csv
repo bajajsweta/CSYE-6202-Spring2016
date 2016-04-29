@@ -1,0 +1,5 @@
+"flightSchedule_id";"flight_id";"flight_from";"flight_to";"flight_departureTime";"flight_arrivalTime";"flight_duration";"crew_ID"
+11;3;"Mumbai";"Goa";"2016-02-18 03:17:17";"2016-02-19 04:17:17";25.0;2
+12;1;"Mumbai";"Delhi";"2016-02-18 16:17:17";"2016-02-18 17:17:17";1.0;2
+13;1;"Mumbai";"Gujarat";"2016-02-18 18:17:17";"2016-02-18 19:17:17";1.0;3
+14;1;"Mumbai";"MP";"2016-02-18 13:17:17";"2016-02-18 15:17:17";2.0;2

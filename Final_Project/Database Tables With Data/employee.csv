@@ -1,0 +1,7 @@
+"emp_id";"emp_name";"emp_designation";"emp_age";"emp_gender";"emp_email";"emp_password";"crew_ID"
+1;"Bruce Wayne";"CEO";30;"M";"bruce@gmail.com";"Wayne";0
+2;"John Smith";"Admin";25;"M";"smith@gmail.com";"smith";0
+3;"Aaron Carter";"Pilot";45;"M";"carter@gmail.com";"carter";1
+4;"Johny Cash";"Staff";22;"M";"cash@gmail.com";"cash";2
+5;"dhvani";"Pilot";23;"F";"dhvan@gmail.comi";"dhvani";3
+6;"Sweta";"Ticket Admin";22;"F";"sweta@gmail.com";"sweta";0

@@ -1,0 +1,5 @@
+"customer_id";"customer_name";"customer_sex";"customer_age";"customer_idproof";"is_passenger";"cust_password"
+1;"Jon Snow";"M";30;"Passport";0;"jon"
+2;"Sansa Stark";"F";25;"Passport";0;"sansa"
+3;"Arya Start";"F";26;"Passport";0;"arya"
+4;"Tyrian Lanister";"M";40;"Passport";0;"tyrian"
