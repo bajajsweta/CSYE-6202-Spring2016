@@ -17,10 +17,13 @@ namespace Final_Project
         public FlightSchedule fs;
 
         public int numOfSeatsSelected;
+        EmployeeCustomerPage employeeCustomerPage;
 
-        public EmployeeBookTicket(FlightSchedule fs, int numOfSeatsSelected)
+        public EmployeeBookTicket(EmployeeCustomerPage employeeCustomerPage,FlightSchedule fs, int numOfSeatsSelected)
         {
+    
             InitializeComponent();
+            this.employeeCustomerPage = employeeCustomerPage;
             this.fs = fs;
             this.numOfSeatsSelected = numOfSeatsSelected;
             Fillflightform();
@@ -79,10 +82,22 @@ namespace Final_Project
             booking.SeatType = fs.seat_type;
             booking.Cost = fs.Type_seatCost;
             booking.TotalCost =  float.Parse(totalPriceTxt.Text);
+            booking.FlightName = flightNametxt.Text;
+            booking.Carrier = flightCarrierTxt.Text;
+            booking.FlighFrom = Flightfrom_comboBox.Text;
+            booking.FlightTo = flightTo_comboBox.Text;
+            booking.FlightDepartureTime = Convert.ToDateTime(DepartureTime_comboBox.Text);
+            booking.FlightArrivalTime = Convert.ToDateTime(ArrivalTime_comboBox.Text);
+            booking.FlightDuration = Convert.ToInt32(flightDuration_txt.Text);
+            booking.BookingTime = DateTime.Now;
+
 
             BookingDataAccess bda = new BookingDataAccess();
             booking = bda.CreateBooking(booking);
-         
+            
+
+            employeeCustomerPage.AddToBookingGrid(booking);
+
             MessageBox.Show("Thank you for Booking !");
             this.Close();
         }

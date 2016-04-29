@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dgv_CommonTable = new System.Windows.Forms.DataGridView();
-            this.dgv_bookedTickets = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.EmpDepart_comboBox = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
@@ -44,32 +43,31 @@
             this.EmpFlightFrom_comboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.refreshbutton = new System.Windows.Forms.Button();
+            this.dgv_bookedTickets = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CommonTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_bookedTickets)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_bookedTickets)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_CommonTable
             // 
             this.dgv_CommonTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_CommonTable.Location = new System.Drawing.Point(21, 207);
+            this.dgv_CommonTable.Location = new System.Drawing.Point(18, 224);
             this.dgv_CommonTable.Name = "dgv_CommonTable";
             this.dgv_CommonTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_CommonTable.Size = new System.Drawing.Size(640, 122);
+            this.dgv_CommonTable.Size = new System.Drawing.Size(640, 145);
             this.dgv_CommonTable.TabIndex = 2;
             this.dgv_CommonTable.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgv_CommonTable_MouseClick);
             this.dgv_CommonTable.MouseEnter += new System.EventHandler(this.dgv_CommonTable_MouseEnter);
-            // 
-            // dgv_bookedTickets
-            // 
-            this.dgv_bookedTickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_bookedTickets.Location = new System.Drawing.Point(21, 377);
-            this.dgv_bookedTickets.Name = "dgv_bookedTickets";
-            this.dgv_bookedTickets.Size = new System.Drawing.Size(640, 129);
-            this.dgv_bookedTickets.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -81,7 +79,7 @@
             this.groupBox1.Controls.Add(this.EmpFlightTo_comboBox);
             this.groupBox1.Controls.Add(this.EmpFlightFrom_comboBox);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(21, 31);
+            this.groupBox1.Location = new System.Drawing.Point(18, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(640, 170);
             this.groupBox1.TabIndex = 4;
@@ -195,7 +193,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(530, 12);
+            this.button1.Location = new System.Drawing.Point(598, 22);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 23);
             this.button1.TabIndex = 5;
@@ -203,52 +201,94 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(12, 51);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(721, 461);
+            this.tabControl1.TabIndex = 7;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.dgv_CommonTable);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(713, 435);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Book Tickets";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.dgv_bookedTickets);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(713, 435);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Booked Tickets";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(21, 346);
+            this.textBox2.Location = new System.Drawing.Point(15, 36);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(181, 20);
-            this.textBox2.TabIndex = 6;
+            this.textBox2.TabIndex = 8;
             this.textBox2.Text = "Booked Flights";
             // 
-            // refreshbutton
+            // dgv_bookedTickets
             // 
-            this.refreshbutton.Location = new System.Drawing.Point(500, 335);
-            this.refreshbutton.Name = "refreshbutton";
-            this.refreshbutton.Size = new System.Drawing.Size(160, 34);
-            this.refreshbutton.TabIndex = 7;
-            this.refreshbutton.Text = "Refresh";
-            this.refreshbutton.UseVisualStyleBackColor = true;
-            this.refreshbutton.Click += new System.EventHandler(this.refreshbutton_Click);
+            this.dgv_bookedTickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_bookedTickets.Location = new System.Drawing.Point(15, 78);
+            this.dgv_bookedTickets.Name = "dgv_bookedTickets";
+            this.dgv_bookedTickets.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_bookedTickets.Size = new System.Drawing.Size(542, 302);
+            this.dgv_bookedTickets.TabIndex = 7;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(582, 78);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(112, 48);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "UnBook Ticket";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // EmployeeCustomerPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 533);
-            this.Controls.Add(this.refreshbutton);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(764, 533);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dgv_bookedTickets);
-            this.Controls.Add(this.dgv_CommonTable);
             this.Name = "EmployeeCustomerPage";
             this.Text = "EmployeePage";
             this.Load += new System.EventHandler(this.button2_Click);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CommonTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_bookedTickets)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_bookedTickets)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.DataGridView dgv_CommonTable;
-        private System.Windows.Forms.DataGridView dgv_bookedTickets;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DateTimePicker EmpDepart_comboBox;
         private System.Windows.Forms.Button button2;
@@ -263,7 +303,11 @@
         private System.Windows.Forms.ComboBox EmpFlightFrom_comboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button refreshbutton;
+        private System.Windows.Forms.DataGridView dgv_bookedTickets;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -16,6 +16,7 @@ namespace Final_Project
     {
 
         ISeat seat;
+        List<Booking> allBookings = new List<Booking>();
 
         public EmployeeCustomerPage()
         {
@@ -37,6 +38,13 @@ namespace Final_Project
             EmpFlightTo_comboBox.DataSource = fsda.GetAllflightToList().ConvertAll(fs => fs.FlightTo);
 
             EmpSeatType_comboBox.DataSource = fsda.GetAllSeatTypes().ConvertAll(fs => fs.seat_type);
+
+
+            Employee e = new Employee();
+            e.Name = CommonAttributes.GetInstance().EmployeeName;
+            allBookings = new BookingDataAccess().GetAllBookings(e);
+            PopulateAllBookingsGrid();
+
         }
 
 
@@ -102,7 +110,7 @@ namespace Final_Project
             flightSchedule.Type_seatCost = seat.CalculatePrice(flightSchedule);
 
             int numOfSeatsSelected = int.Parse(EmpNo_of_seats_textbox.Text.Equals("") ? "0" : EmpNo_of_seats_textbox.Text);
-            EmployeeBookTicket empbookTicket = new EmployeeBookTicket(flightSchedule, numOfSeatsSelected);
+            EmployeeBookTicket empbookTicket = new EmployeeBookTicket(this,flightSchedule, numOfSeatsSelected);
             empbookTicket.Show();
         }
 
@@ -110,25 +118,48 @@ namespace Final_Project
 
         private void refreshbutton_Click(object sender, EventArgs e)
         {
-            DAL.DataAccess da = new DAL.DataAccess();
+        }
 
-            var paramValues = new List<string>();
-            paramValues.Add("Johny Cash");
+        /***************************************BookingGrid Related Code************************/
 
-            var paramTypes = new List<string>();
-            paramTypes.Add("string");
+        public void PopulateAllBookingsGrid()
+        {
+            var dataTable = Booking.GetDataTable(allBookings);
+            dgv_bookedTickets.DataSource = dataTable;
+            if (dataTable.Rows.Count >= 1)
+                dgv_bookedTickets.Columns[0].Visible = false;
+        }
 
-            var bookingList = da.runProcedure("BOOKED_TICKETS", paramValues, paramTypes);
+        public void AddToBookingGrid(Booking booking)
+        {
+            allBookings.Add(booking);
+            PopulateAllBookingsGrid();
+        }
 
-            var table = da.GetDataTableFor(bookingList);
+        public void UpdateBookingGrid(Booking booking)
+        {
+            allBookings.RemoveAll(b => b.BookingID == booking.BookingID);
+            AddToBookingGrid(booking);
+        }
 
-
-            dgv_bookedTickets.DataSource = table;
+        public void DeleteFromBookingGrid(Booking booking)
+        {
+            allBookings.RemoveAll(b => b.BookingID == booking.BookingID);
+            PopulateAllBookingsGrid();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Booking booking = allBookings[dgv_bookedTickets.SelectedRows[0].Index];
+            // code vto call BookingDataAccess
+            BookingDataAccess bda = new BookingDataAccess();
+            bda.DeleteBooking(booking);
+            DeleteFromBookingGrid(booking);
         }
     }
 }

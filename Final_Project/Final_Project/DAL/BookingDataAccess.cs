@@ -35,8 +35,40 @@ namespace Final_Project.DAL
             var bookingId = int.Parse(bookingIDAsList[0][0].ToString());
             booking.BookingID = bookingId;
 
+            return booking;
+        }
+
+        public Booking DeleteBooking(Booking booking)
+        {
+            var paramValues = new List<string>();
+            paramValues.Add(GetValue(booking.BookingID.ToString()));
+         
+
+            var paramTypes = new List<string>();
+            paramTypes.Add("int");
+         
+
+            //Enter the Stored proc for the Employee
+            var bookingList = runProcedure("DELETE_TICKET", paramValues, paramTypes);
+            
 
             return booking;
+        }
+
+
+        public List<Booking> GetAllBookings(Employee employee)
+        {
+            var paramValues = new List<string>();
+            paramValues.Add(GetValue(employee.Name));
+      
+            var paramTypes = new List<string>();
+            paramTypes.Add("string");
+
+            //Enter the Stored proc for the Employee
+            var bookingList = runProcedure("BOOKED_TICKETS", paramValues, paramTypes);
+            var allBookings = bookingList.ConvertAll(b => Booking.construct(b));
+
+            return allBookings;
         }
 
     }
