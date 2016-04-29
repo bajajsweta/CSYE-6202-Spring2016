@@ -113,6 +113,7 @@
             // 
             // seatType_CombBox
             // 
+            this.seatType_CombBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.seatType_CombBox.FormattingEnabled = true;
             this.seatType_CombBox.Items.AddRange(new object[] {
             "Business",
@@ -151,6 +152,7 @@
             // 
             // FlightTo_comboBox
             // 
+            this.FlightTo_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FlightTo_comboBox.FormattingEnabled = true;
             this.FlightTo_comboBox.Location = new System.Drawing.Point(190, 50);
             this.FlightTo_comboBox.Name = "FlightTo_comboBox";
@@ -159,6 +161,7 @@
             // 
             // FlightFrom_comboBox
             // 
+            this.FlightFrom_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FlightFrom_comboBox.FormattingEnabled = true;
             this.FlightFrom_comboBox.Location = new System.Drawing.Point(19, 50);
             this.FlightFrom_comboBox.Name = "FlightFrom_comboBox";

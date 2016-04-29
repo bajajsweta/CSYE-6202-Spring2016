@@ -46,9 +46,9 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dgv_bookedTickets = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CommonTable)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -66,6 +66,7 @@
             this.dgv_CommonTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_CommonTable.Size = new System.Drawing.Size(640, 145);
             this.dgv_CommonTable.TabIndex = 2;
+            this.dgv_CommonTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CommonTable_CellContentClick);
             this.dgv_CommonTable.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgv_CommonTable_MouseClick);
             this.dgv_CommonTable.MouseEnter += new System.EventHandler(this.dgv_CommonTable_MouseEnter);
             // 
@@ -236,6 +237,16 @@
             this.tabPage2.Text = "Booked Tickets";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(582, 78);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(112, 48);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "UnBook Ticket";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(15, 36);
@@ -252,16 +263,6 @@
             this.dgv_bookedTickets.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_bookedTickets.Size = new System.Drawing.Size(542, 302);
             this.dgv_bookedTickets.TabIndex = 7;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(582, 78);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 48);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "UnBook Ticket";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // EmployeeCustomerPage
             // 

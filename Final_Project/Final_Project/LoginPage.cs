@@ -54,7 +54,7 @@ namespace Final_Project
                 EmployeeCustomerPage ecp = new EmployeeCustomerPage();
                 this.Close();
                 ecp.Show();
-                Log.Info("Admin Logged in : " + ConstantAttributes.GetInstance().EmployeeName);
+                Log.Info("Employee Logged in : " + ConstantAttributes.GetInstance().EmployeeName);
             }
             else
             {

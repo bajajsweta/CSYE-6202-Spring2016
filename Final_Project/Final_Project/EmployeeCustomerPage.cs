@@ -161,5 +161,10 @@ namespace Final_Project
             bda.DeleteBooking(booking);
             DeleteFromBookingGrid(booking);
         }
+
+        private void dgv_CommonTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
