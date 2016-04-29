@@ -45,7 +45,7 @@ namespace Final_Project
             return null;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) 
         {
             FlightSchedule fs = new FlightSchedule();
             fs.FlighFrom = FlightFrom_comboBox.SelectedItem.ToString();
